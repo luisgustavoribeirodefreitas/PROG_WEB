@@ -1,0 +1,41 @@
+h1{
+    color: blue;
+}
+
+.positivo{
+    color: green;
+    padding: 5px;
+    border: 2px solid green;
+    border-radius: 5px;
+}
+
+.perigo{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#rosa{
+    color: pink;
+    background-color: rgb(219, 68, 22);
+}
+
+.imagem{
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.topo{
+    text-align: center;
+}
+
+.corpo{
+    width: 50%;
+    margin: 0 auto;
+}
+
+body{
+    padding: 5px 25px;
+}
+

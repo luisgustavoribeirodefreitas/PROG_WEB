@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Pix-DoBem</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Alunos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Mais opções</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Mais Doações</a></li>
+                            <li><a class="dropdown-item" href="#">Apoiar profesores</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Procurar Aluno" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Procurar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="topo">
+        <h1 class="positivo"> Contribua com a minha formação </h1>
+    </div>
+
+    <div class="menu">
+
+    </div>
+
+    <div class="conteudo">
+        <h1 class="perigo"> Vamos contribuir </h1>
+        <p>Com esse QRCode, você poderá enviar um pix para financiar o meu futuro melhor.</p>
+        <h1>Cadastrar sua doação</h1>
+        <div class="mb-3">
+            <label for="email" class="form-label">Campo de email</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="mensagem" class="form-label">Digite sua mensagem </label>
+            <textarea class="form-control" id="mensagem" rows="3"></textarea>
+        </div>
+
+        <label for="range4" class="form-label">Escolha o valor da doação</label>
+        <input type="range" class="form-range" min="0" max="1000" value="500" id="range4">
+        <output for="range4" id="rangeValue" aria-hidden="true"></output>
+
+        <script>
+            // This is an example script, please modify as needed
+            const rangeInput = document.getElementById('range4');
+            const rangeOutput = document.getElementById('rangeValue');
+
+            // Set initial value
+            rangeOutput.textContent = rangeInput.value;
+
+            rangeInput.addEventListener('input', function () {
+                rangeOutput.textContent = this.value;
+            });
+        </script>
+        <div class="corpo">
+
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagens/images.jpeg" class="w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/images1.jpeg" class="w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/images2.jpeg" class="w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="rodape">
+            <p>Todos os direitos reservados. 2026</p>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #edf3fa;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    width: 90%;
+    max-width: 680px;
+}
+
+h1 {
+    color: #172a4a;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 5px 18px #00000012;
+}
+
+th,
+td {
+    padding: 15px;
+    border: 1px solid #dce3ed;
+    text-align: center;
+}
+
+th {
+    background: #3b65b2;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f1f5fa;
+}
+
+span {
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.aprovado {
+    background: #c6efda;
+    color: #166038;
+}
+
+.recuperacao {
+    background: #ffe7ac;
+    color: #775000;
+}
+
+.reprovado {
+    background: #ffcdcd;
+    color: #a11f1f;
+}

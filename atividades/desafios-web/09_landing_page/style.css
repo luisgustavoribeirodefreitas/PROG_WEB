@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #edf3f9;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.hero {
+    padding: 65px 20px;
+    color: white;
+    background: linear-gradient(#071a3c99, #071a3cdd), url("fundo.svg") center / cover;
+}
+
+h1 {
+    margin: 0;
+    font-size: 37px;
+}
+
+.hero p {
+    margin-bottom: 28px;
+}
+
+.botao {
+    padding: 12px 25px;
+    border-radius: 6px;
+    background: #0867ed;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background: #004db9;
+}
+
+.recursos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 850px;
+    width: 100%;
+    margin: 0 auto;
+    background: white;
+}
+
+.recursos article {
+    padding: 23px 10px;
+    border: 1px solid #e6ecf3;
+}
+
+.recursos span {
+    font-size: 30px;
+    color: #0867ed;
+}
+
+.recursos h2 {
+    margin: 8px 0 4px;
+    font-size: 18px;
+}
+
+.recursos p {
+    margin: 0;
+    color: #68758c;
+    font-size: 14px;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 27px;
+    }
+}

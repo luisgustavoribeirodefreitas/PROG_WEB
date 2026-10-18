@@ -4,41 +4,72 @@
 
 body {
     margin: 0;
-    padding: 40px;
-    font-family: Arial,sans-serif;
-    background: #f3f5fa;
-    color: #253047;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f5fa;
+    font-family: Arial, sans-serif;
+}
+
+.produto {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 590px;
+    padding: 18px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 6px 24px #00000012;
+}
+
+.imagem {
+    width: 230px;
+    border-radius: 10px;
+}
+
+.detalhes {
+    flex: 1;
 }
 
 h1 {
-    margin-top: 0;
+    margin: 0;
+    font-size: 23px;
 }
 
 p {
-    line-height: 1.6;
+    color: #637087;
+    line-height: 1.5;
 }
 
-button,.button {
-    background: #3459d1;
-    color: white;
+strong {
+    display: block;
+    margin: 15px 0;
+    font-size: 23px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
     border: 0;
-    padding: 12px 22px;
-    border-radius: 8px;
+    border-radius: 6px;
+    background: #0865e9;
+    color: white;
+    font-weight: bold;
     cursor: pointer;
-    display: inline-block;
 }
 
-.card {
-    background: white;
-    padding: 28px;
-    border-radius: 14px;
-    box-shadow: 0 5px 20px #14244916;
+button:hover {
+    background: #0848a8;
 }
 
-.avatar,.photo {
-    font-size: 75px;
-    text-align: center;
-    padding: 20px;
-    background: #e5ecff;
-    border-radius: 12px;
+@media (max-width: 620px) {
+    .produto {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .imagem {
+        width: 100%;
+    }
 }

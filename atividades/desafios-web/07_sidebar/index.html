@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Layout com Sidebar</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="layout"><aside><h2>Painel</h2><a href="#inicio">Início</a><a href="#perfil">Perfil</a><a href="#config">Configurações</a></aside><main><h1>Área Principal</h1><p>Conteúdo da página ao lado do menu lateral.</p><div class="card">Bem-vindo ao painel!</div></main></div>
+    <div class="layout">
+        <aside class="sidebar">
+            <h2>Menu</h2>
+            <nav>
+                <a href="#inicio" class="ativo">⌂ &nbsp; Início</a>
+                <a href="#produtos">▤ &nbsp; Produtos</a>
+                <a href="#relatorios">▥ &nbsp; Relatórios</a>
+                <a href="#configuracoes">⚙ &nbsp; Configurações</a>
+            </nav>
+        </aside>
+        <main>
+            <h1>Conteúdo Principal</h1>
+            <p>Bem-vindo ao sistema. Aqui ficará o conteúdo da página.</p>
+        </main>
+    </div>
 </body>
 </html>

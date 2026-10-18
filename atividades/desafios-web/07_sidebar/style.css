@@ -4,58 +4,69 @@
 
 body {
     margin: 0;
-    padding: 40px;
-    font-family: Arial,sans-serif;
-    background: #f3f5fa;
-    color: #253047;
-}
-
-h1 {
-    margin-top: 0;
-}
-
-p {
-    line-height: 1.6;
-}
-
-a {
-    color: #3459d1;
-    text-decoration: none;
-}
-
-.card {
-    background: white;
-    padding: 28px;
-    border-radius: 14px;
-    box-shadow: 0 5px 20px #14244916;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #ebf1f7;
+    font-family: Arial, sans-serif;
 }
 
 .layout {
-    display: grid;
-    grid-template-columns: 220px 1fr;
-    gap: 24px;
+    display: flex;
+    width: 90%;
+    max-width: 850px;
+    min-height: 340px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 6px 22px #00000012;
 }
 
-.layout aside {
-    background: #26385c;
+.sidebar {
+    width: 230px;
+    padding: 20px 12px;
+    background: #152a45;
     color: white;
-    padding: 24px;
-    border-radius: 12px;
-    min-height: 75vh;
 }
 
-.layout aside a {
+.sidebar h2 {
+    margin: 5px 12px 20px;
+}
+
+.sidebar a {
     display: block;
+    padding: 14px;
+    border-radius: 6px;
     color: white;
-    margin: 20px 0;
+    text-decoration: none;
 }
 
-@media (max-width: 650px) {
-    .layout {
-        grid-template-columns: 1fr;
+.sidebar a:hover,
+.sidebar .ativo {
+    background: #0867ed;
+}
+
+main {
+    flex: 1;
+    padding: 35px;
+}
+
+main h1 {
+    margin-top: 0;
+    font-size: 26px;
+}
+
+main p {
+    color: #52627b;
+    line-height: 1.6;
+}
+
+@media (max-width: 560px) {
+    .sidebar {
+        width: 155px;
     }
 
-    .layout aside {
-        min-height: auto;
+    main {
+        padding: 22px;
     }
 }

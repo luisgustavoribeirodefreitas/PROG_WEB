@@ -45,7 +45,6 @@ let carrinho = [objPoduto0 ={
     categoria: "informatica"
 }];
 
-console.log(carrinho)
 
 function atualizarLista(){
     lista.innerHTML = "";
@@ -56,3 +55,5 @@ function atualizarLista(){
     }
 }
 
+
+atualizarLista();

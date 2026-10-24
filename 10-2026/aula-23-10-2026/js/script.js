@@ -48,14 +48,11 @@ let carrinho = [objPoduto0 ={
 console.log(carrinho)
 
 function atualizarLista(){
-    listaProdutos.innerHTML = "";
+    lista.innerHTML = "";
     for(let i =0; i < carrinho.length; i++){
         let item = document.createElement("li");
-        item.textContent = carrinho[i];
-        listaProdutos.appendChild(item);
-
-        console.log(carrinho[i].nome);
-        console.log(carrinho[i].valor);
+        item.textContent = carrinho[i].nome + " - R$" + carrinho[i].valor + " - Disponível: " + carrinho[i].quantidade;
+        lista.appendChild(item);
     }
 }
 

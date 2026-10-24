@@ -9,48 +9,51 @@ const lista = document.getElementById("lista")
 
 let objPoduto0 ={
     nome: "Luis",
-    vaor: 10,
+    valor: 10,
     quantidade: 5,
     categoria: "informatica"
 };
 
 let objPoduto1 ={
     nome: "Pedro",
-    vaor: 1.2,
+    valor: 1.2,
     quantidade: 5,
     categoria: "informatica"
 };
 
 let objPoduto2 ={
     nome: "João",
-    vaor: 5.5,
+    valor: 5.5,
     quantidade: 5,
     categoria: "informatica"
 };
 
 let carrinho = [objPoduto0 ={
     nome: "Luis",
-    vaor: 10,
+    valor: 10,
     quantidade: 5,
     categoria: "informatica"
 }, bjPoduto1 ={
     nome: "Pedro",
-    vaor: 1.2,
+    valor: 1.2,
     quantidade: 5,
     categoria: "informatica"
 }, bjPoduto2 ={
     nome: "João",
-    vaor: 5.5,
+    valor: 5.5,
     quantidade: 5,
     categoria: "informatica"
 }];
 
 
-function atualizarLista(){
+function atualizarLista() {
     lista.innerHTML = "";
-    for(let i =0; i < carrinho.length; i++){
+    for (let i = 0; i < carrinho.length; i++) {
         let item = document.createElement("li");
-        item.textContent = carrinho[i].nome + " - R$" + carrinho[i].valor + " - Disponível: " + carrinho[i].quantidade;
+        item.textContent =
+            carrinho[i].nome +
+            " - R$ " + carrinho[i].valor +
+            " - Disponível: " + carrinho[i].quantidade;
         lista.appendChild(item);
     }
 }

@@ -1,0 +1,68 @@
+HTML é a linguagem usada para definir a estrutura e o conteúdo de uma página web.
+
+DOCTYPE - Informa ao navegador que o documento utiliza HTML moderno.
+html - É o elemento raiz da página. O atributo lang indica que o idioma principal é o português do Brasil.
+
+head - Informações e configurações da página
+
+title - Texto que aparece na aba do navegador
+
+meta charset="UTF-8" define a codificação dos caracteres do documento
+
+body - Conteúdo exibido na página
+
+Elementos semânticos
+
+header — cabeçalho
+Pode conter o título da página, uma logo ou uma introdução.
+
+main — conteúdo principal 
+Agrupa o conteúdo principal daquela página.
+
+section — seção
+Agrupa conteúdos relacionados, como uma seção sobre o curso e outra sobre as aulas. 
+Fica dentro da main
+
+footer — rodapé
+Pode conter direitos autorais, informações de contato e outros dados finais.
+
+-----------------------------------------------------------------------------------------
+
+id - serve identificar o elemento de maneira única.
+
+name - identifica o campo nos dados enviados pelo formulário. 
+
+-------------------------------------------------------------------------------------------------
+CSS é responsável pela aparência das páginas HTML: 
+cores, fontes, alinhamento, espaçamento e muito mais.
+
+1. Seletor por elemento
+p {
+    color: red;
+}
+Seleciona todos os elementos p da página. Nesse exemplo, os dois parágrafos ficam vermelhos.
+
+2. Seletor por classe
+.descricao {
+    color: green;
+}
+O ponto (.) indica uma classe. Seleciona todos os elementos com class="descricao".
+
+3. Seletor por identificador
+#titulo {
+    text-align: center;
+}
+O jogo da velha (#) indica um id. Seleciona o elemento que tem id="titulo".
+
+-------------------------------------------------------------------------------------------
+div - Elemento HTML utilizado para agrupar outros elementos em um bloco, facilitando a organização e a aplicação de estilos CSS.
+
+width - Define a largura de um elemento.
+
+padding - Define o espaçamento interno entre o conteúdo e a borda do elemento.
+
+margin - Define o espaçamento externo entre um elemento e os elementos ao seu redor.
+
+border - Define a borda de um elemento, permitindo configurar sua espessura, estilo e cor.
+
+border-radius - Define o arredondamento dos cantos de um elemento.

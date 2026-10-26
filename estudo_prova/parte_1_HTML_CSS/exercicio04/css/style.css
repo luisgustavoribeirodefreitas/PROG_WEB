@@ -1,0 +1,21 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#titulo {
+    text-align: center;
+}
+
+p {
+    color: rgb(34, 114, 114);
+}
+
+.card{
+    text-align: center;
+    background-color: burlywood;
+    border-radius: 20px;
+    width: 250px;
+    padding: 5px 5px;
+    margin: 20px;
+    border: 2px solid yellowgreen;
+}

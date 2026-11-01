@@ -47,13 +47,7 @@ body{
     color: white;
     border: 1px solid blue;
     padding: 5px;
-}
-
-
-#formulario {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    animation: normal;
 }
 
 #titulo-cadastro{
@@ -68,12 +62,19 @@ body{
     border-radius: 10px;
     padding: 5px 10px;
     max-width: 300px;
+    gap: 10px;
 }
 
 #bloco-cadastro{
     margin: 30px 0px;
     display: flex;
     justify-content: center;
+}
+
+#secao-formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 
